@@ -1,1 +1,1 @@
-$("#total").text("Cart | Total items: " + <%= cart_items %> );
+$("#total").html('<a><%= link_to "your CART has #{cart_items} ITEMS", cart_path %></a>');

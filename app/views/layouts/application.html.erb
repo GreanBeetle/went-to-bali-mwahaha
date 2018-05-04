@@ -10,7 +10,11 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li id="total"><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
+        <li id="total">
+
+          <%= link_to "your CART has #{ cart_items } ITEMS", cart_path %>
+
+        </li>
 
 
 
