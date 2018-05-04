@@ -22,13 +22,17 @@ class OrderItemsController < ApplicationController
     @order.save
   end
 
+  def edit
+    @item = @order.order_items.find(params[:id])
+  end
+
   def destroy
     @order = current_order
     @item = @order.order_items.find(params[:id])
     @item.destroy
     @order.save
     respond_to do |format|
-      format.html { redirect_to cart_url}
+      format.html { redirect_to cart_path }
       format.js
     end
   end
