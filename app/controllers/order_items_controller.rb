@@ -2,10 +2,17 @@ class OrderItemsController < ApplicationController
 
   def create
     @order = current_order
-    @item = @order.order_items.new(item_params)
+    amount = item_params[:quantity].to_i
+    id = item_params[:product_id]
+    @item = @order.order_items.find_or_initialize_by(product_id: id)
+    @item.quantity = @item.quantity.to_i + amount
+    @item.save
     @order.save
     session[:order_id] = @order.id
-    redirect_to products_path
+    respond_to do |format|
+      format.html { redirect_to players_path }
+      format.js
+    end
   end
 
   def update

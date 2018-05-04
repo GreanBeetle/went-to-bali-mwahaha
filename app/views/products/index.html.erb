@@ -12,12 +12,12 @@
         <%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!" %>
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
       <% end %>
+
       <!-- AJAX toggle product detail -->
       <p>
         <%= link_to "DETAIL", product_path(product), id:"#{product.id}", remote: true %>
       </p>
-      <div id="product_detail_<%= product.id %>">
-      </div>
+      <div id="product_detail_<%= product.id %>"></div>
 
     </div>
   <% end %>
