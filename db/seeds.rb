@@ -1,3 +1,5 @@
+Product.destroy_all
+
 class Seed
 
   def self.begin
@@ -13,3 +15,5 @@ class Seed
 end
 
 Seed.begin
+
+p "Created #{Product.count} products."
