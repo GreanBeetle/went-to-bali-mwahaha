@@ -2,6 +2,9 @@ REVISE THIS!
 
 E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
 
+NOTES
+
+Hi Franz. This was a difficult but illuminating prompt. You're previous students are right, more prompts like these would be helpful. Question regarding commit messages. I wrote a few commits like this, "Refactor f.number_field :quantity to accept only 1 < int < 1000". Professionally acceptable? No? Better to write "Refactor number field input to accept only integers between 1 and 1000"?  My instinct is that plain English is best, but I'm curious about your take. 
 
 # Went To Bali MWAHAHA!
 
