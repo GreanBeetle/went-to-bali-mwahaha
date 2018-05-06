@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     if user.email == 'administrator@gmail.com' || user.email == 'admin@gmail.com'
       user.admin = true
     end
-
     if user.save
       flash[:notice] = "Thank you, #{user.name}. Your account has been created."
       session[:user_id] = user.id
