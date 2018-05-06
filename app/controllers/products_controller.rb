@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    @image = @product.image
+    
     render :show
   end
 
