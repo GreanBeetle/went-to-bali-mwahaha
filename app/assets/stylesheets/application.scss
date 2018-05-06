@@ -3,3 +3,17 @@
 nav {
   background-color: black;
 }
+
+.footer {
+    position: fixed;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #E3E3E3;
+    color: white;
+    text-align: center;
+    small {
+      padding-top: 20px;
+    }
+}

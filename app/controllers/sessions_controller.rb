@@ -5,6 +5,9 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_email(params[:email])
+    if user.email == "admin@gmail.com"
+      current_user.admin == true
+    end 
     if user && user.authenticate(params[:password])
       flash[:notice] = "#{user.name} signed in"
       session[:user_id] = user.id

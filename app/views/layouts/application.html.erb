@@ -13,9 +13,6 @@
         <li id="total">
           <%= link_to "your CART has #{ cart_items } ITEMS", cart_path %>
         </li>
-
-
-
         <li><%= link_to "See all products", products_path %></li>
         <% if current_user %>
           <li><%= current_user.email %></li>
@@ -29,14 +26,16 @@
   </nav>
 
   <body>
-    <!-- add product -->
-    <li>
-      <%= link_to "NEW", new_product_path, :method => :get %>
-    </li>
-    <!-- end -->
     <%= flash[:notice] %>
     <div class="container">
       <%= yield %>
     </div>
+
+    <div class="footer">
+      <p>
+        <%= link_to "ADMIN", new_product_path, :method => :get %>
+      </p>
+    </div>
+
   </body>
 </html>
