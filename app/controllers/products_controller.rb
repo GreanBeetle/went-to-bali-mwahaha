@@ -35,8 +35,15 @@ class ProductsController < ApplicationController
     if @product.update(product_params)
       redirect_to new_product_path
     else
-      render :edit 
+      render :edit
     end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    flash[:notice] = "#{@product.name} was deleted."
+    redirect_to new_product_path
   end
 
   private

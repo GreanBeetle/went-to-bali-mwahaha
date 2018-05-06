@@ -10,6 +10,6 @@
 <br>
 <section>
   <% @products.each do |product| %>
-    <span><p><%= product.name %> | <%= link_to "UPDATE", edit_product_path(product) %> </p></span><br>
+    <span><p><%= product.name %> | <%= link_to "UPDATE", edit_product_path(product) %> | <button><%= link_to "X", product_path(product), :method => "delete" %></button></p></span><br>
   <% end %>
 </section>
