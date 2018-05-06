@@ -4,6 +4,12 @@
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
     Password: <%= f.number_field :price %>
-  <%= f.submit "Submit" %>
+    <%= f.submit "Submit" %>
+  <% end %>
 
-<% end %>
+<br>
+<section>
+  <%= @products.each do |product| %>
+    <span><p><%= product.name %> | <%= link_to "UPDATE", edit_product_path(product) %></p></span><br>
+  <% end %>
+</section>

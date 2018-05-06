@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    @products = Product.all
   end
 
   def create
@@ -19,10 +20,14 @@ class ProductsController < ApplicationController
     end
   end
 
+
   def show
     @product = Product.find(params[:id])
-    
     render :show
+  end
+
+  def edit
+    # code
   end
 
   private

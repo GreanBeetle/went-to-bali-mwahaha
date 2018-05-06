@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
-    if user.email == 'administrator@gmail.com'
+    if user.email == 'administrator@gmail.com' || user.email == 'admin@gmail.com'
       user.admin = true
     end
 
