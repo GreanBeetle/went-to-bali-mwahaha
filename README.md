@@ -1,10 +1,6 @@
-REVISE THIS!
+*NOTE FOR FRANZ*
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
-
-NOTES
-
-Hi Franz. This was a difficult but illuminating prompt. You're previous students are right, more prompts like these would be helpful. Question regarding commit messages. I wrote a few commits like this, "Refactor f.number_field :quantity to accept only 1 < int < 1000". Professionally acceptable? No? Better to write "Refactor number field input to accept only integers between 1 and 1000"?  My instinct is that plain English is best, but I'm curious about your take. 
+###### There's an admin link in the footer of the page. Admin functionality is accessible only if you create an account with "admin@gmail.com" or "administrator@gmail.com".  
 
 # Went To Bali MWAHAHA!
 
@@ -13,7 +9,7 @@ Hi Franz. This was a difficult but illuminating prompt. You're previous students
 ### _John Rykken_
 
 
-Independent Ruby Rails project for week 3 of Rails track at Epicodus. This is a simple, cloned e-commerce site that badly-needed refactoring. The objectives here were to implement AJAX and refactor at least 6 of 12 objectives.
+Independent Ruby Rails project for week 3 of Rails track at Epicodus. This is a simple, cloned e-commerce site that needed refactoring. The objectives here were to implement AJAX and refactor at least 6 of 12 objectives.
 
 ## Specs
 
@@ -30,7 +26,9 @@ Independent Ruby Rails project for week 3 of Rails track at Epicodus. This is a 
 3. Display flash messages when admin updates or deletes a product.
 4. Add Paperclip for product image upload.
 5. Add product validations.
-6. Add admin links to navbar so that admins can add, update, and delete products.
+6. Add admin link to footer.
+7. Allow admin to create, read, update, delete a product. 
+8. Allow admin to price items with decimal places. 
 
 ## Setup
 
